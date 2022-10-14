@@ -1,0 +1,28 @@
+@use "../../assets/sass/variable" as *;
+
+.counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(gray, 0.5);
+    background-color: $color-primary;
+    &_tickets{
+        text-align: center;
+    }
+    &_buttons{
+        display: flex;
+        justify-content: space-evenly;
+        button {
+            min-width: 20px;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: none;
+            background-color: $color-secondary;
+        }
+    }
+}
